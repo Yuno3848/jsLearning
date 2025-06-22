@@ -71,6 +71,10 @@ console.log("from :", Array.from(fullName));
 let tempArr = [1, 2, 3, "sdfsdfs"];
 console.log("typeof tempArr :", typeof tempArr);
 
+let arr4 = [1, 2, 3, 4, 5, 6];
+console.log("splice array :", arr4.splice(1, 3, "kate", "fade"));
+console.log("arr4 :", arr4);
+
 //function
 
 function display() {
@@ -161,3 +165,47 @@ console.log(Object.assign({}, id1, id2));
 //spread operator
 const tempArr1 = [1, 2, 3, 4, 5, 6];
 console.log(...tempArr1);
+
+//string
+const yourName = "kate";
+const age = 23;
+console.log(`your name is : ${yourName}`); //string interpolation
+console.log(`my name is ${yourName} and I am ${age} old`);
+
+let intro = "my name Is kate";
+console.log("intro length :", intro.length);
+console.log(`char at :${intro.charAt(-4)}`); //negative will return blank space
+console.log(`at : ${intro.at(-2)}`); //negative will return the character from the last index
+console.log(`uppercase : ${intro.toUpperCase()}`);
+console.log(`lowercase : ${intro.toLowerCase()}`);
+console.log(`index of : ${intro.indexOf("a")}`);
+// console.log(`replace : ${intro.replace("name", "your name")}`);
+console.log(`slice : ${intro.slice(1, 5)}`);
+console.log(intro);
+
+let tempIntro = "im on discord";
+// console.log(`split : ${tempIntro.split(",")}`);
+let updatedString = tempIntro.split("");
+console.log("updatedString :", updatedString);
+console.log("tempIntro :", tempIntro);
+
+let arr10 = [1, 2, 3, 4, 5];
+console.log(`slice of array : ${arr10.slice(-2, 5)}`);
+let tempSplice = arr10.splice(1, 0, 20);
+console.log(tempSplice);
+console.log(arr10);
+
+console.log("join :", arr10.join(","));
+let a1 = "abc";
+let a2 = "def";
+console.log(a1 + a2);
+console.log(a1.concat(a2));
+
+let obj10 = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+
+console.log(Object.keys(obj10));
+console.log(Object.values(obj10));

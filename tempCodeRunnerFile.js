@@ -1,7 +1,9 @@
-function add(num1, num2) {
-  return num1 + num2;
-}
+let obj10 = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
 
-console.log(add(1, 2));
-const addtion = add;
-console.log(addtion(1, 2));
+console.log(Object.keys(obj10));
+console.log(Object.values(obj10));
+console.log(obj10.length);
