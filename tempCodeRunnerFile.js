@@ -1,9 +1,6 @@
-let obj10 = {
-  a: 1,
-  b: 2,
-  c: 3,
-};
+let arr = [1, 2, 3, 4, 5];
+function displayNum(val1, val2, val3) {
+  return val2;
+}
 
-console.log(Object.keys(obj10));
-console.log(Object.values(obj10));
-console.log(obj10.length);
+console.log(displayNum(arr));
